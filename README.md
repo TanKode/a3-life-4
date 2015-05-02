@@ -11,8 +11,9 @@
 * [Navicat](http://www.navicat.com/de)
 
 ## Slotzahlen
-* **Fahrzeuggrenze:** 1500
-* **Rucksackgrenze:** 65
+* **Fahrzeuggrenze:** 1500 Slots
+* **Helikoptergrenze:** 450 Slots (darf inkl. anhängbarer Fahrzeuge nicht über 1000 Slots)
+* **Rucksackgrenze:** 65 Slots
 * **Rohstoffe:** 6 Slots
 * **Verarbeitet:** 3 Slots
 * **Werkzeuge:** 2 Slots
