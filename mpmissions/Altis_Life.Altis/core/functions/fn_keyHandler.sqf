@@ -83,7 +83,17 @@ switch (_code) do
 			};
 		};
 	};
-	
+
+	//Shift+1 = Faded Sound
+    case 2:
+    {
+      	if(_shift) then
+    	{
+    		[] call life_fnc_fadeSound;
+    		_handled = true;
+    	};
+    };
+
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
