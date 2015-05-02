@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet href="acs.xsl" type="text/xsl" ?>
+
+<BEAdmins>
+	<!-- 
+	Definiere Administratoren
+	
+	name : Name vom Administrator (InGame-Name)
+	guid : Die GUID vom Spieler
+	group : Der Admin Level, dies muss eine Zahl sein
+	groupname : Gruppenname - wenn dieses Feld leer gelassen wird erscheint keine Meldung auf dem Server
+	
+	Hinweis: Beachte die Reihenfolge von  "<..id= >". 0, 1, 2, usw. Sollte nicht die Reihenfolge eingehalten werden, kann dies zu Fehlern führen.
+	
+	
+	Online Dokumentation: http://www.ibattle.org/install-and-configure/define-admins/
+    weitere Infos in der Nitrado-Wiki: http://wiki.nitrado.net/index.php/Battleye_Extended_Controls
+	
+	-->
+	
+	<admin id="0">
+		<name>Der Spielername</name>
+		<guid>GUID</guid>
+		<group>0</group>
+		<groupname>Super Admin</groupname>
+	</admin>
+	
+	<admin id="1">
+		<name>Der Spielername</name>
+		<guid>AnotherGUID</guid>
+		<group>3</group>
+		<groupname>Noob Admin</groupname>
+	</admin>
+	
+</BEAdmins>

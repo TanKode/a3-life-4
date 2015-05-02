@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet href="acs.xsl" type="text/xsl" ?>
+<!-- 
+
+Online Dokumentation: http://www.ibattle.org/install-and-configure/setting-up-the-scheduler/
+weitere Infos in der Nitrado-Wiki: http://wiki.nitrado.net/index.php/Battleye_Extended_Controls
+
+*****************************************************************************************************
+Beschreibung:
+*****************************************************************************************************
+
+Eine Aufgabe wird durch das Hinzufügen eines "job"-Elements mit eindeutiger "id=" erstellt.
+
+Ein Job besteht aus insgesamt 6 Einstellungen:
+
+
+#TIME/ZEIT
+
+	<time>......</time> 
+	Diese Einstellung hat Zwei mögliche Formate:
+
+*************** Format 1: ***************
+	Beinhaltet 3 Segmente, wobei jedes Segment zwei Ziffern mit einem Bereich von 00 bis 99 hat.
+	Stunde Minute Sekunde
+	[nn] [nn] [nn]
+	nnnnnn
+	Der maximale Wert beträgt: 999999
+
+	Beispiele:
+	<time>000090</time>
+	Dieser Wert bedeutet, dass der Job alle 90 Sekunden ausgeführt wird.
+
+	<time>000130</time>
+	Dieser Wert bedeutet auch, dass der Job alle 90 Sekunden (1 Minute, 30 Sekunden) ausgeführt wird.
+ 
+	<time>001000</time>
+	Dieser Wert bedeutet, dass der Job alle 10 Minuten ausgeführt wird.
+
+	<time>020000</time>
+	Dieser Wert bedeutet, dass der Job alle 2 Stunden ausgeführt wird.
+ 
+*************** Format 2: ***************
+	Beinhaltet 3 Segmente, wobei jedes Segment zwei Ziffern mit einem Bereich von 00 bis 23 respektive 00 bis 59 hat.
+	Alle Segmente werden durch ein ':' getrennt.
+
+	Stunde Minute Sekunde
+	[nn] : [nn] : [nn]
+
+	Beispiele:
+	<time>23:00:00</time>
+	Dieser Wert bedeutet, dass der Job um 23:00Uhr ausgeführt wird. 
+
+	Um einen Job um Mitternacht auszuführen verwende bitte dieses Format:
+	<time>00:00:00</time>
+
+	Um einen Job zur Mittagszeit (12 Uhr Mittags) auszuführen verwende bitte dieses Format:
+	<time>12:00:00</time>
+
+*************** *************** ***************
+
+
+#DELAY/VERZÖGERUNG
+	
+	<delay>nnnnnn</delay>
+	Stunde Minute Sekunde
+	[nn] [nn] [nn]
+	Diese Einstellung verwendet das "Format 1" von <time>.
+	Das Delay (Verzögerung) funktioniert nur, wenn bei <time> ebenfalls das Format 1 verwendet wird.
+
+	Beispiel:
+	<delay>001000</delay>
+	Der Job wird 10 Minuten nach dem Serverstart ausgeführt (sofern <time>000000</time> gesetzt wurde)
+	Ansonsten läuft nach Ablauf des Delays der Timer an.
+	Hat man <delay>001000</delay> und <time>001000</time> gesetzt, läuft nach 10 Minuten der Timer an, der Job wird also erst nach 20Minuten ausgeführt.
+
+
+#DAY/WOCHENTAG
+
+	<day>...</day>
+	An welchen Wochentagen der Job ausgeführt werden soll.
+	Die Tage werden durch ein ',' (Komma) getrennt.
+	<day>n</day> oder <day>n,n,n</day>
+
+	1=Montag
+	2=Dienstag
+	3=Mittwoch
+	4=Donnerstag
+	5=Freitag
+	6=Samstag
+	7=Sonntag
+
+	<day>1,2,3,4,5,6,7</day>
+	Der Job wird an allen Wochentagen ausgeführt.
+
+	<day>1,5</day>
+	Der Job wird nur am Freitag und am Sonntag ausgeführt.
+
+
+#LOOP/WIEDERHOLUNG
+
+	<loop>1</loop>
+	Der Job wird wiederholt ausgeführt (wie oft wird mittels Time festgelegt).
+	Hierzu wird ebenfalls das Time Format 1 benötigt.
+
+	<loop>0</loop>
+	Der Befehl wird nur einmalig ausgeführt.
+	Bei <time>000200</time> Zwei Minuten nach dem Serverstart und dann nie wieder.
+	Bei <time>20:00</time> um genau 20:00Uhr
+
+
+#COMMAND/BEFEHL
+
+	<cmd></cmd>
+	Der Befehl, welcher ausgeführt werden soll
+	Beispiele:
+	<cmd>say -1 TEXT</cmd>
+	<cmd>#shutdown</cmd>
+	etc.
+
+
+#CMDTYPE/BEFEHLSTYP
+
+	<cmdtype>0</cmdtype>
+	0 = Interner Befehl (say -1, #shutdown, #restart, etc.)
+
+	<cmdtype>1</cmdtype>
+	1 = Extern auszuführendes Script (loadscript *.bat oder loadscript *.cmd)
+	Diese Funktion steht bei Nitrado, aus sicherheitsgründen, nicht zur Verfügung!
+	Deswegen immer <cmdtype>0</cmdtype> verwenden.
+
+Folgende Befehle werden bei <cmdtype>0</cmdtype> unterstützt:
+say -1 TEXT		// Textnachricht an alle Spieler
+#lock			// Server abschliessen (keine neuen Spieler können mehr drauf)
+#unlock			// Server wieder öffnen
+#shutdown		// Herunterfahren des Server (Nitrado.net Server werden automatisch neu gestartet)
+#restart		// Neustarten der Mission (Server läuft weiter)
+loadbans		// Lädt die Banliste
+loadscripts		// Lädt die Scriptliste (scripts.ini)
+loadevents		// Lädt die Events Liste
+writebans		// Schreibt alle Bans in eine Datei
+maxping 250		// Maximal erlaubter Ping
+#reassign		// Missionsneustart mit Erkennung der Spieleranzahl (wird für DayZ nicht benötigt) 
+#mission filename (ohne die .pbo Endung) // Bestimmte Mission starten (wird für DayZ nicht benötigt)
+
+
+Der erste Job beginnt immer mit der id="0"
+Beispiel:
+<Scheduler>
+	<job id="0">
+		<time></time>
+		<delay></delay>
+		<day></day>
+		<loop></loop>
+		<cmd></cmd>
+		<cmdtype></cmdtype>
+	</job>
+	<job id="1">
+		<time></time>
+		<delay></delay>
+		<day></day>
+		<loop></loop>
+		<cmd></cmd>
+		<cmdtype></cmdtype>
+	</job>
+</Scheduler>	
+
+*****************************************************************************************************
+Anfang des Schedulers:
+*****************************************************************************************************
+-->
+
+
+<Scheduler>
+	<!-- *** TEXTNACHRICHTEN WIEDERHOLEND *** -->
+	<!-- Textnachricht alle 20 Minuten -->
+	<job id="0">
+		<time>002000</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop>
+		<cmd>say -1 This Server is hosted by Nitrado.net</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<!-- Textnachricht alle 20 Minuten (10 Minuten zeitverzögert/versetzt) -->
+	<job id="1">
+		<time>002000</time>
+		<delay>001000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>1</loop> 
+		<cmd>say -1 Nitrado.net - Gameserver, Voiceserver, Bouncer, Webspace</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<!-- *** TEXTNACHRICHTEN WELCHE EINMALIG ANGEZEIGT WERDEN *** -->
+	<!-- Textnachricht 2 Minuten nach Serverneustart (BEC wird 90 Sekunden nach dem Server gestartet).-->
+	<job id="2">
+		<time>000001</time>
+		<delay>000030</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Der Scheduler meldet sich zum Dienst!</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+		<!-- Textnachricht zu einer bestimmten Zeit (nur Feitags) -->
+	<job id="3">
+		<time>18:00:00</time>
+		<delay>000000</delay>
+		<day>5</day>
+		<loop>0</loop> 
+		<cmd>say -1 Es ist Wochenende. Yeah!</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+		<!-- Textnachricht zu einer bestimmten Zeit (alle Wochentage) -->
+	<job id="4">
+		<time>12:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 Mittagzeit - Mach mal Pause!</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<!-- *** SERVER NEUSTART *** -->
+	<!-- *** ! WICHTIG ! *** -->
+	<!-- Der Server darf NICHT mit dem #shutdown Befehl gestoppt werden! Bitte den zeitgesteuerten Neustart im Webinterface verwenden! Ansonsten kann BEC nicht mehr mitstarten. -->
+	<!-- Fixxe Meldung zum Neustart um 6 Uhr morgens, an jedem Wochentag. -->
+	<job id="5">
+		<time>06:00:00</time>
+		<delay>000000</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop>
+		<cmd>say -1 WARNING: Server restart, now!</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<!-- Neustart alle 4h (BEC wird 90 Sekunden nach dem Server gestartet) -->
+	<job id="6">
+		<time>000001</time>
+		<delay>035830</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop>
+		<cmd>say -1 WARNING: Server restart, now!</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<!-- *** NEUSTART Warnmeldungen *** -->
+	<!-- 30min Warnung (erscheint nach 3h30min, BEC wird 90 Sekunden nach dem Server gestartet) -->
+	<job id="7">
+		<time>000001</time>
+		<delay>032830</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 WARNING: Server restart in 30 minutes.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<!-- 15min Warnung (erscheint nach 3h45min, BEC wird 90 Sekunden nach dem Server gestartet) -->
+	<job id="8">
+		<time>000001</time>
+		<delay>034330</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 WARNING: Server restart in 15 minutes.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<!-- 5min Warnung (erscheint nach 3h55min, BEC wird 90 Sekunden nach dem Server gestartet) -->
+	<job id="9">
+		<time>000001</time>
+		<delay>035330</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 WARNING: Server restart in 5 minutes.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+	<!-- 1min Warnung (erscheint nach 3h59min, BEC wird 90 Sekunden nach dem Server gestartet) -->
+	<job id="10">
+		<time>000001</time>
+		<delay>035730</delay>
+		<day>1,2,3,4,5,6,7</day>
+		<loop>0</loop> 
+		<cmd>say -1 WARNING: Server restart in 1 minute.</cmd>
+		<cmdtype>0</cmdtype>			
+	</job>
+</Scheduler>

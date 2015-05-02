@@ -1,0 +1,36 @@
+# Folder
+kart/
+logs/
+@extDB/
+heli/
+mark/
+curator/
+dll/
+extDB/
+keys/
+steamapps/
+.idea/
+TADST/default/
+TADST/Server/
+TADST/Test/
+config/Users/
+
+# Types
+*.dll
+*.exe
+*.bin
+*.rpt
+*.log
+
+# Files
+steam_appid.txt
+arma3server_readme.txt
+AltisLife-3.1.4.8-extDB-0.txt
+a3l-server.iml
+TADST/TADST.profiles
+A3_CONNECTLOG 01-05-2015.txt
+A3_SURVEILLANCELOG 01-05-2015.txt
+desktop.ini
+A3_CONNECTLOG 02-05-2015.txt
+A3_SURVEILLANCELOG 02-05-2015.txt
+addons/

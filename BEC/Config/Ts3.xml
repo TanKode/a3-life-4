@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<?xml-stylesheet href="acs.xsl" type="text/xsl" ?>
+
+<Ts3>
+
+	<!-- 
+		Note: 
+		keep <..id= > in order for your admin block. else parsing the file will cause errors. 
+		Start it at 0 and increment it by 1 for each admin you add.
+	-->
+	<Ts3Admins>
+		
+		<admin id="0">
+			
+			<!-- name of the admin.. do not need to match ts name -->
+			<name>Admin Name</name>
+			
+			<!-- Ts3 Uid to the admin . note. do not confuse this with arma guid-->
+			<uid>Ts3Uid</uid>
+			
+			<!-- Notifys you with pm when someone get kicked if set to 1. -->
+			<nok>1</nok>
+			
+			<!-- Notifys you with pm when someone get banned  if set to 1. -->
+			<nob>1</nob>
+			
+			<!-- Notifys you with pm when someone gets caught for hack (GH|BH)  if set to 1. -->
+			<noh>1</noh>
+			
+		</admin>
+
+		<admin id="1">
+			<name>Another Admin</name>
+			<uid>1234</uid>
+			<nok>0</nok>
+			<nob>1</nob>
+			<noh>0</noh>	
+		</admin>	
+	
+		<admin id="2">
+			<name>Admin Number Three</name>
+			<uid>TSUID</uid>
+			<nok>1</nok>
+			<nob>0</nob>
+			<noh>1</noh>		
+		</admin>
+	</Ts3Admins>
+	
+	
+	
+	<!-- General Ts3 Settings. -->
+	<Ts3Settings>
+		
+		<!-- Ip address to your ts3 server -->
+		<address>127.0.0.1</address>
+		
+		<!-- Query port -->
+		<port>10011</port>
+		
+		<!-- The virtual server the queryer will use -->
+		<virtualserver>1</virtualserver>
+		
+		<!-- ts3 server query user -->
+		<username>serveradmin</username>
+
+		<!-- password to log in the user -->
+		<password>secret</password>
+
+		<!-- 
+			Pokes ts3 clients when there is 60 sec's left of lobby idlign and when they get kicked for lobby idling. 
+			KickLobbyIdlers needs to be set in the config.cfg file.
+			input may be 0,1 or False,True
+		-->
+		<clientpoke>1</clientpoke>
+		
+		<!-- Send warning message through BE if clients are not on Ts3 -->
+		<clientrequiredts3>1</clientrequiredts3>
+		
+		<!-- Will send N warnings to the player if he/she is not on the ts3 server. interval between each warning is 1 min.  clientrequiredts3 must be 1 for this to work -->
+		<clientwarnings>2</clientwarnings>
+		
+		<!-- Send this message N = (clientwarnings) times through BE when clients are not connected to the ts3server : MAXLENGHT = 64Chars -->
+		<clientrequiredts3_warningmessage>Connect to our ts3 server at ts3.domain.com to play here</clientrequiredts3_warningmessage>
+		
+		<!-- Send this message through BE when clients gets kicked from the game server for not being on the Ts3 server MAXLENGHT = 64Chars -->
+		<clientrequiredts3_kickmessage>Absent from our Ts3server is not allowed, join : ts3.domain.com</clientrequiredts3_kickmessage>
+		
+		
+		<!-- 
+			Kick a client from the ts3 server if the player was kicked from the Gameserver 
+			input may be 0,1 or False,True
+		-->
+		<clientkick>0</clientkick>
+
+		<!-- 
+			Ban a client from the ts3 server if the player was banned from the Gameserver 
+			input may be 0,1 or False,True
+		-->
+		<clientban>0</clientban>
+
+	</Ts3Settings>
+	
+		
+</Ts3>
