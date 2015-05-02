@@ -4,6 +4,8 @@
     * .ignore
     * Ini4Idea
     * Markdown
+    * Batch Scripts Support
+    * CMD Support
 * [SourceTree](http://www.sourcetreeapp.com)
 * [PBO Manager](http://www.armaholic.com/page.php?id=16369)
 * [Navicat](http://www.navicat.com/de)
