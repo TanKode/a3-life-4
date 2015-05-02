@@ -20,7 +20,8 @@
 * **Lebensmittel:** 1 Slot
 
 ## Karte
-* **schwarzer Kreis:** Farmgebiet
+* **schwarzer Kreis:** legale Farmgebiet
+* **roter Kreis:** illegale Farmgebiet
 * **blauer Kreis:** Verarbeitung
 * **grüner Kreis:** Händler
 * **weißer Kreis:** Stadt / Safezone
