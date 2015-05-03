@@ -9,7 +9,7 @@
 	Make sure to have proper settings!
 */
 /* *******************Developer : infiSTAR (infiSTAR23@gmail.com)******************* */
-/* **************infiSTAR Copyright®© 2011 - 2015 All rights reserved.************** */
+/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2015 All rights reserved.************** */
 /* *********************************www.infiSTAR.de********************************* */
 /* ********************************************************************************* */
 /* ********************************************************************************* */
@@ -116,7 +116,7 @@ _adminLevel2 =
 ];
 _adminLevel3_UIDs =
 [
-	'76561198041582893','76561198036376000','0'
+	'76561198041582893','76561198036376000','76561198000373935'
 ];
 _adminLevel3 =
 [
@@ -482,5 +482,5 @@ diag_log format['<infiSTAR.de> %1 - run.sqf - AdminTools included!',time];
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
-/* **************infiSTAR Copyright®© 2011 - 2015 All rights reserved.************** */
+/* **************infiSTAR Copyrightï¿½ï¿½ 2011 - 2015 All rights reserved.************** */
 /* ****DayZAntiHack.com***DayZAntiHack.de***ArmaAntiHack.com***Arma3AntiHack.com**** */
