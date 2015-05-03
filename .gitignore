@@ -12,6 +12,7 @@
 /.idea/
 /TADST/
 /addons/
+/config/Users/
 
 # Types
 *.dll
