@@ -21,6 +21,8 @@
 *.rpt
 *.log
 *.iml
+*.bidmp
+*.mdmp
 
 # Files
 steam_appid.txt
@@ -28,7 +30,6 @@ arma3server_readme.txt
 AltisLife-3.1.4.8-extDB-0.txt
 desktop.ini
 ACCOUNTS.md
-config/arma3server_2015-05-03_13-16-57.bidmp
 
 # Logs
 A3_*.txt
