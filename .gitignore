@@ -10,10 +10,7 @@ extDB/
 keys/
 steamapps/
 .idea/
-TADST/default/
-TADST/Server/
-TADST/Test/
-config/Users/
+TADST/
 addons/
 
 # Types
@@ -28,7 +25,6 @@ steam_appid.txt
 arma3server_readme.txt
 AltisLife-3.1.4.8-extDB-0.txt
 a3l-server.iml
-TADST/TADST.profiles
 desktop.ini
 ACCOUNTS.md
 config/arma3server_2015-05-03_13-16-57.bidmp
