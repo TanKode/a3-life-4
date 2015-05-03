@@ -1,17 +1,17 @@
 # Folder
-kart/
-logs/
-@extDB/
-heli/
-mark/
-curator/
-dll/
-extDB/
-keys/
-steamapps/
-.idea/
-TADST/
-addons/
+/kart/
+/logs/
+/@extDB/
+/heli/
+/mark/
+/curator/
+/dll/
+/extDB/
+/keys/
+/steamapps/
+/.idea/
+/TADST/
+/addons/
 
 # Types
 *.dll
