@@ -24,7 +24,7 @@ sleep (random (IL_Check_Veh_Max - IL_Check_Veh_Min));
 	};
 } forEach (vehicles);
 
-cutText ["Alle Seile und Karabiner sind eingepackt.","PLAIN",2];
+// cutText ["Alle Seile und Karabiner sind eingepackt.","PLAIN",2];
 
 while {true} do 
 {
