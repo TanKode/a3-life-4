@@ -31,8 +31,9 @@ if(!isNil {_val}) then
 		default {};
 	};
 	
-	player playmove "AinvPknlMstpSlayWrflDnon";
-	titleText[format[localize "STR_NOTF_PickedMoney",[_val] call life_fnc_numberText],"PLAIN"];
-	life_cash = life_cash + _val;
-	life_action_delay = time;
+    player playmove "AinvPknlMstpSlayWrflDnon";
+    titleText[format[localize "STR_NOTF_PickedMoney",[_val] call life_fnc_numberText],"PLAIN"];
+    life_cash = life_cash + _val;
+    [[player, player, _val, 3, life_atmcash, life_cash],"TON_fnc_handleDBLog",false] spawn life_fnc_MP; //By Nukefliege <----Hier
+    life_action_delay = time;
 };
