@@ -359,7 +359,8 @@ class Life_Client_Core
 		class vehicleGarage {};
 		class gangDeposit {};
 	};
-	class Market
+};
+    class Market
     	{
     		file = "core\market";
 
@@ -376,8 +377,5 @@ class Life_Client_Core
     		class marketGetRow;
     		class marketGetPriceRow;
     		class marketSetPriceRow;
-    	};
-    	};
-
     	};
 
