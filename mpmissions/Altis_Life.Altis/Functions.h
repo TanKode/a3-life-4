@@ -257,29 +257,30 @@ class Life_Client_Core
 		file = "core\cop";
 		class copMarkers {};
 		class copLights {};
-		class vehInvSearch {};
+		class copSiren {};
+		class copShowLicense {};
+		class copLicenseShown {};
+		class copLoadout {};
+		class copInteractionMenu {};
 		class copSearch {};
+		class copOpener {};
+		class vehInvSearch {};
 		class bountyReceive {};
 		class searchClient {};
 		class restrain {};
 		class ticketGive {};
 		class ticketPay {};
 		class ticketPrompt {};
-		class copSiren {};
 		class spikeStripEffect {};
 		class radar {};
 		class questionDealer {};
-		class copInteractionMenu {};
 		class sirenLights {};
 		class licenseCheck {};
 		class licensesRead {};
 		class repairDoor {};
 		class doorAnimate {};
 		class fedCamDisplay {};
-		class copLoadout {};
 		class ticketPaid {};
-		class copShowLicense {};
-        class copLicenseShown {};
 	};
 	
 	class Gangs

@@ -261,6 +261,12 @@ switch (_code) do
 			};
 		};
 	};
+	// O, Polizei und Rettungs dienst Schranken öffner      (MAFIA MUSS NOCH ENTFERNT WERDEN)
+    case 23:
+	{
+		if (!_shift && !_alt && !_ctrlKey && (playerSide == west || playerSide == independent) && (vehicle player != player)) then {
+			[] call life_fnc_copOpener;
+		};
 };
 
 _handled;
