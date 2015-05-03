@@ -118,29 +118,29 @@ class CfgFunctions
 			class updateHouseTrunk {};
 			class houseCleanup {};
 		};
-		 class Systems
-                {
-                    file = "\life_server\Functions\Systems";
-                    class managesc {};
-                    class cleanup {};
-                    class huntingZone {};
-                    class getID {};
-                    class vehicleCreate {};
-                    class vehicleDead {};
-                    class spawnVehicle {};
-                    class getVehicles {};
-                    class vehicleStore {};
-                    class vehicleDelete {};
-                    class spikeStrip {};
-                    class logIt {};
-                    class federalUpdate {};
-                    class chopShopSell {};
-                    class clientDisconnect {};
-                    class cleanupRequest {};
-                    class setObjVar {};
-                    class keyManagement {};
-                    class handleDBLog {}; //<----- Hier
-                };
+		class Systems
+		{
+			file = "\life_server\Functions\Systems";
+			class managesc {};
+			class cleanup {};
+			class huntingZone {};
+			class getID {};
+			class vehicleCreate {};
+			class vehicleDead {};
+			class spawnVehicle {};
+			class getVehicles {};
+			class vehicleStore {};
+			class vehicleDelete {};
+			class spikeStrip {};
+			class logIt {};
+			class federalUpdate {};
+			class chopShopSell {};
+			class clientDisconnect {};
+			class cleanupRequest {};
+			class setObjVar {};
+			class keyManagement {};
+			class handleDBLog {};
+		};
 		class Gangs
 		{
 			file = "\life_server\Functions\Gangs";
