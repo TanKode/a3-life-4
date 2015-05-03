@@ -278,6 +278,8 @@ class Life_Client_Core
 		class fedCamDisplay {};
 		class copLoadout {};
 		class ticketPaid {};
+		class copShowLicense {};
+        class copLicenseShown {};
 	};
 	
 	class Gangs
