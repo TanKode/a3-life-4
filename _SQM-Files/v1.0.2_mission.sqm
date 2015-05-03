@@ -1830,6 +1830,7 @@ class Mission
 					id=84;
 					side="CIV";
 					vehicle="C_man_1_3_F";
+					player="PLAYER COMMANDER";
 					leader=1;
 					skill=0.60000002;
 					text="civ_70";
@@ -3421,6 +3422,7 @@ class Mission
 					side="GUER";
 					vehicle="I_Story_Colonel_F";
 					player="PLAY CDG";
+					forceHeadlessClient=1;
 					leader=1;
 					skill=0.60000002;
 					text="hc_1";
@@ -3492,7 +3494,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=535;
+		items=525;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -8916,114 +8918,10 @@ class Mission
 			skill=0.60000002;
 			init="this enableSimulation false;";
 		};
-		class Item525
-		{
-			position[]={4713.4121,294.78336,21364.406};
-			azimut=-610.27197;
-			id=738;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-		};
-		class Item526
-		{
-			position[]={3581.5842,20.601322,14483.974};
-			azimut=-365.01099;
-			offsetY=1;
-			id=739;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item527
-		{
-			position[]={23991.195,8.8865623,15443.96};
-			azimut=-270.74292;
-			id=740;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item528
-		{
-			position[]={18137.092,22.650364,15173.782};
-			azimut=-259.50995;
-			offsetY=1.08842;
-			id=741;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item529
-		{
-			position[]={21583.738,19.33,21277.404};
-			azimut=-466.09399;
-			id=742;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item530
-		{
-			position[]={19382.121,38.769585,13243.592};
-			azimut=-392.01312;
-			offsetY=1;
-			id=743;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item531
-		{
-			position[]={16534.037,19.870001,17180.055};
-			azimut=-644.30377;
-			id=744;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item532
-		{
-			position[]={9494.8418,118.57005,15914.027};
-			azimut=-722.90143;
-			id=745;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item533
-		{
-			position[]={7888.3594,114.55093,16151.599};
-			azimut=-404.00647;
-			offsetY=1;
-			id=746;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
-		class Item534
-		{
-			position[]={5377.3135,22.1731,14505.721};
-			azimut=-401.79037;
-			offsetY=1;
-			id=747;
-			side="EMPTY";
-			vehicle="Land_CashDesk_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false;";
-		};
 	};
 	class Markers
 	{
-		items=230;
+		items=215;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -9046,7 +8944,7 @@ class Mission
 		{
 			position[]={3400.7595,1.8830158,12899.346};
 			name="fish_market_1";
-			text="Fisch Markt";
+			text="Fish Market";
 			type="mil_box";
 			colorName="ColorGreen";
 		};
@@ -9054,7 +8952,7 @@ class Mission
 		{
 			position[]={3765.8088,18.85,12990.187};
 			name="hospital_marker";
-			text="Krankenhaus";
+			text="Hospital";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -9093,66 +8991,65 @@ class Mission
 		{
 			position[]={13820.758,19.826002,18969.209};
 			name="cop_spawn_3";
-			text="Polizei Station";
+			text="Police Station";
 			type="mil_box";
+			colorName="ColorBLUFOR";
 		};
 		class Item11
 		{
 			position[]={14161.147,19.243717,16295.893};
 			name="cop_spawn_4";
-			text="Polizei Air HQ";
+			text="Police Air HQ";
 			type="mil_box";
+			colorName="ColorBLUFOR";
 		};
 		class Item12
 		{
 			position[]={19856.078,62.778057,17895.051};
 			name="iron_1";
-			text="Eisenmine";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			text="Iron Mine";
+			type="mil_triangle";
+			colorName="ColorBrown";
 		};
 		class Item13
 		{
 			position[]={23823.781,3.1900001,18601.668};
 			name="salt_1";
-			text="Salzmine";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			text="Salt Mine";
+			type="mil_triangle";
+			colorName="ColorBrown";
 		};
 		class Item14
 		{
 			position[]={27361.367,6.3006272,24465.764};
 			name="Salt";
-			text="Salz Verarbeitung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
+			text="Salt Processing";
+			type="mil_box";
+			colorName="ColorBrown";
 		};
 		class Item15
 		{
 			position[]={22150.52,3.150569,14475.64};
 			name="Correctional Facility";
-			text="Staatsgefängnis";
+			text="Altis Corrections";
 			type="mil_dot";
+			colorName="Color4_FD_F";
 		};
 		class Item16
 		{
 			position[]={3269.3455,2.1793349,12967.998};
 			name="police_hq_1";
-			text="Polizei HQ";
+			text="Police HQ";
 			type="mil_box";
+			colorName="Color4_FD_F";
 		};
 		class Item17
 		{
 			position[]={16589.234,11,12763.845};
 			name="police_hq_2";
-			text="Polizei Station";
+			text="Police Station";
 			type="mil_box";
+			colorName="Color4_FD_F";
 		};
 		class Item18
 		{
@@ -9166,8 +9063,9 @@ class Mission
 		{
 			position[]={9188.2607,14.383561,21670.799};
 			name="Rebelop";
-			text="Rebellen Außenposten";
+			text="Rebel Outpost";
 			type="mil_triangle";
+			colorName="Color1_FD_F";
 		};
 		class Item20
 		{
@@ -9181,7 +9079,7 @@ class Mission
 		{
 			position[]={3763.6846,34.367668,12372.792};
 			name="civ_truck_shop1";
-			text="LKW Händler";
+			text="Truck Shop";
 			type="c_car";
 			colorName="ColorBlue";
 		};
@@ -9189,7 +9087,7 @@ class Mission
 		{
 			position[]={6263.5244,43,16265.374};
 			name="OilP";
-			text="Öl - Verarbeitung";
+			text="Oil Processing";
 			type="mil_box";
 			colorName="ColorBrown";
 		};
@@ -9205,7 +9103,7 @@ class Mission
 		{
 			position[]={8090.8218,77.531647,22620.234};
 			name="sand_1";
-			text="Sand - Mine";
+			text="Sand Mine";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -9221,17 +9119,15 @@ class Mission
 		{
 			position[]={8440.3506,49.484863,12756.805};
 			name="cocaine processing";
-			text="Kokain Verarbeitung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
+			text="Cocaine Processing";
+			type="mil_dot";
+			colorName="Color1_FD_F";
 		};
 		class Item27
 		{
-			position[]={1125.7421,-0.15016228,28721.662};
+			position[]={167.63799,0.021615377,14709.002};
 			name="truck_1";
-			text="LKW-Händler";
+			text="Truck Shop";
 			type="c_car";
 			colorName="ColorBlack";
 		};
@@ -9239,13 +9135,13 @@ class Mission
 		{
 			position[]={4412.5562,37.095924,12605.266};
 			name="lead_1";
-			text="Kupfer Mine";
+			text="Copper Mine";
 			type="mil_triangle";
-			colorName="ColorBlack";
+			colorName="ColorBrown";
 		};
 		class Item29
 		{
-			position[]={1125.6737,-0.076770231,28522.488};
+			position[]={167.56963,0.078673914,14509.83};
 			name="atm";
 			text="ATM";
 			type="loc_Tourism";
@@ -9253,7 +9149,7 @@ class Mission
 		};
 		class Item30
 		{
-			position[]={1121.8358,0.062652901,28423.965};
+			position[]={163.73174,0.012321081,14411.306};
 			name="lbank";
 			text="Local Bank";
 			type="loc_Tourism";
@@ -9261,17 +9157,17 @@ class Mission
 		};
 		class Item31
 		{
-			position[]={1127.203,-0.23774141,28827.057};
+			position[]={169.09892,-0.026115492,14814.396};
 			name="Carshop";
-			text="Autohändler";
+			text="Car Shop";
 			type="c_car";
 			colorName="ColorWhite";
 		};
 		class Item32
 		{
-			position[]={1127.4647,-0.0014566928,28621.135};
+			position[]={169.36064,0.027309759,14608.475};
 			name="Hospital_1";
-			text="Krankenhaus";
+			text="Hospital/Clinic";
 			type="loc_Hospital";
 			colorName="ColorRed";
 		};
@@ -9302,23 +9198,23 @@ class Mission
 		{
 			position[]={3479.1758,2.6362305,13231.096};
 			name="Gen";
-			text="Baumarkt";
+			text="General Store";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
 		class Item37
 		{
-			position[]={1120.6221,0.33784127,28313.338};
+			position[]={162.51799,-0.069760568,14300.679};
 			name="Gen_1";
-			text="Zivilisten Shop";
+			text="Civilian Shops";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
 		class Item38
 		{
-			position[]={1119.1731,-0.24018876,28215.379};
+			position[]={161.06902,0.056310706,14202.72};
 			name="boat_1";
-			text="Boot Shop";
+			text="Boat Shop";
 			type="c_ship";
 			colorName="ColorWhite";
 		};
@@ -9340,7 +9236,7 @@ class Mission
 		{
 			position[]={3364.3098,4.8093276,13064.118};
 			name="Gen_3";
-			text="H&M";
+			text="Bruce's Outback Outfits";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9362,21 +9258,17 @@ class Mission
 		{
 			position[]={4187.0205,36.297176,13106.365};
 			name="apple_1";
-			text="Apfelfeld";
+			text="Apple Field";
 			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			colorName="Color3_FD_F";
 		};
 		class Item45
 		{
 			position[]={25982.121,15.485652,20889.566};
 			name="apple_2";
-			text="Apfelfeld";
+			text="Apple Field";
 			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			colorName="Color3_FD_F";
 		};
 		class Item46
 		{
@@ -9384,23 +9276,21 @@ class Mission
 			name="peaches_2";
 			text="Peaches Field";
 			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			colorName="Color3_FD_F";
 		};
 		class Item47
 		{
 			position[]={10800.928,32.462917,13238.061};
 			name="peaches_1";
-			text="Pfirsich Feld";
+			text="Peaches Field";
 			type="loc_Tree";
-			colorName="ColorBlack";
+			colorName="Color3_FD_F";
 		};
 		class Item48
 		{
 			position[]={3486.2664,7.7271852,12951.688};
 			name="Gen_3_1";
-			text="Markt";
+			text="Market";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9408,9 +9298,9 @@ class Mission
 		{
 			position[]={10022.424,14.231085,12550.737};
 			name="apple_3";
-			text="Apfelfeld";
+			text="Apple Field";
 			type="loc_Tree";
-			colorName="ColorBlack";
+			colorName="Color3_FD_F";
 		};
 		class Item50
 		{
@@ -9424,11 +9314,9 @@ class Mission
 		{
 			position[]={13120.37,39.285686,19673.133};
 			name="peaches_3";
-			text="Pfirsichfeld";
+			text="Peach Field";
 			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			colorName="Color3_FD_F";
 		};
 		class Item52
 		{
@@ -9474,7 +9362,7 @@ class Mission
 		{
 			position[]={3041.5544,2.0197022,12612.536};
 			name="boat_2";
-			text="Boot Shop";
+			text="Boat Shop";
 			type="c_ship";
 			colorName="ColorWhite";
 		};
@@ -9491,7 +9379,7 @@ class Mission
 		{
 			position[]={3914.5459,16.270481,13591.836};
 			name="dp_missions";
-			text="Deutsche Post";
+			text="Delivery Missions";
 			type="mil_box";
 			colorName="ColorYellow";
 		};
@@ -9499,10 +9387,10 @@ class Mission
 		{
 			position[]={3427.2068,2.5439744,12735.082};
 			name="dive_shop";
-			text="Tauch Shop";
+			text="Diving Shop";
 			type="mil_box";
 			colorName="ColorOrange";
-			angle=-144.45599;
+			angle=-144.45552;
 		};
 		class Item61
 		{
@@ -9725,7 +9613,7 @@ class Mission
 		{
 			position[]={20884.641,2.7453954,14624.866};
 			name="Dealer_1_3";
-			text="Drogendealer";
+			text="Drug Dealer";
 			type="mil_dot";
 			colorName="ColorOrange";
 		};
@@ -9733,10 +9621,10 @@ class Mission
 		{
 			position[]={14327.465,18.488745,17427.523};
 			name="Dealer_1_4";
-			text="Drogendealer";
+			text="Drug Dealer";
 			type="mil_dot";
 			colorName="ColorOrange";
-			angle=-57.933102;
+			angle=-57.933056;
 		};
 		class Item89
 		{
@@ -9759,25 +9647,23 @@ class Mission
 		{
 			position[]={14344.174,37.080429,18952.045};
 			name="dimond_1";
-			text="Diamanten Verarbeitung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
+			text="Diamond Processing";
+			type="mil_triangle";
+			colorName="ColorBrown";
 		};
 		class Item92
 		{
 			position[]={9186.0107,27.468599,13990.347};
 			name="oil_2";
-			text="Ölfeld";
+			text="Oil Field";
 			type="mil_triangle";
-			colorName="ColorBlack";
+			colorName="ColorBrown";
 		};
 		class Item93
 		{
 			position[]={9757.7891,231.07008,19445.281};
 			name="oil_1";
-			text="Öl Feld";
+			text="Oil Field";
 			type="mil_triangle";
 			colorName="ColorBrown";
 		};
@@ -9785,21 +9671,17 @@ class Mission
 		{
 			position[]={11556.398,77.697838,7048.0737};
 			name="weed_1";
-			text="Cannabisfeld";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			text="Weed Field";
+			type="mil_dot";
+			colorName="Color1_FD_F";
 		};
 		class Item95
 		{
 			position[]={10390.828,27.723936,13200.983};
 			name="Weed_p_1";
-			text="Cannabis Verabeitung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
+			text="Weed Processing";
+			type="mil_dot";
+			colorName="Color1_FD_F";
 		};
 		class Item96
 		{
@@ -9927,7 +9809,7 @@ class Mission
 		{
 			position[]={3002.437,0.019021351,12651.198};
 			name="civ_ship_1";
-			text="Boot Spawn";
+			text="Boat Spawn";
 			type="loc_Quay";
 			colorName="ColorOrange";
 		};
@@ -9935,7 +9817,7 @@ class Mission
 		{
 			position[]={9085.4102,20.793713,12038.007};
 			name="Gen_3_1_1";
-			text="Markt";
+			text="Market";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9943,7 +9825,7 @@ class Mission
 		{
 			position[]={8956.4238,27.330736,11999.08};
 			name="Gen_3_3";
-			text="C&A";
+			text="Bruce's Outback Outfits";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9951,7 +9833,7 @@ class Mission
 		{
 			position[]={25665.254,19.308283,21296.332};
 			name="Gen_3_4";
-			text="KiK";
+			text="Bruce's Outback Outfits";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9959,7 +9841,7 @@ class Mission
 		{
 			position[]={25573.17,19.70323,21312.16};
 			name="Gen_3_1_1_1";
-			text="Markt";
+			text="Market";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9967,7 +9849,7 @@ class Mission
 		{
 			position[]={14041.689,24.368345,18787.1};
 			name="Gen_3_1_1_2";
-			text="Markt";
+			text="Market";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9975,7 +9857,7 @@ class Mission
 		{
 			position[]={14074.721,23.343645,18559.061};
 			name="Gen_3_4_1";
-			text="Primarkt";
+			text="Bruce's Outback Outfits";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -9983,11 +9865,9 @@ class Mission
 		{
 			position[]={9530.3555,127.03247,15077.41};
 			name="copper_mine_1";
-			text="Kupfer - Verarbeitung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
+			text="Copper Processing";
+			type="mil_box";
+			colorName="ColorBrown";
 		};
 		class Item121
 		{
@@ -10002,7 +9882,7 @@ class Mission
 		{
 			position[]={16813.541,22.862633,12625.873};
 			name="Gen_2";
-			text="Baumarkt";
+			text="General Store";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -10010,10 +9890,10 @@ class Mission
 		{
 			position[]={25779.512,20.229164,21352.607};
 			name="Gen_2_1";
-			text="Baumarkt";
+			text="General Store";
 			type="c_unknown";
 			colorName="ColorGreen";
-			angle=-0.67126203;
+			angle=-0.67126209;
 		};
 		class Item124
 		{
@@ -10028,8 +9908,9 @@ class Mission
 		{
 			position[]={5188.1885,217.79607,20872.66};
 			name="cocaine_1";
-			text="Kokain - Feld";
+			text="Cocaine Field";
 			type="mil_dot";
+			colorName="Color1_FD_F";
 		};
 		class Item126
 		{
@@ -10045,21 +9926,17 @@ class Mission
 		{
 			position[]={12582.778,34.149235,16394.836};
 			name="oil_trader";
-			text="Öl Händler";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
+			text="Oil Trader";
+			type="b_unknown";
+			colorName="ColorOrange";
 		};
 		class Item128
 		{
 			position[]={20695.104,4.5465231,19467.057};
 			name="oil_trader_1";
-			text="Salz Händler";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
+			text="Salt Trader";
+			type="b_unknown";
+			colorName="ColorOrange";
 		};
 		class Item129
 		{
@@ -10074,7 +9951,7 @@ class Mission
 		{
 			position[]={4928.9746,16.186176,14576.784};
 			name="oil_trader_3";
-			text="Glas - Händler";
+			text="Glass Trader";
 			type="b_unknown";
 			colorName="ColorOrange";
 		};
@@ -10082,7 +9959,7 @@ class Mission
 		{
 			position[]={5327.8848,22.266685,14476.616};
 			name="oil_trader_4";
-			text="Eisen / Kupfer Händler";
+			text="Iron / Copper Trader";
 			type="b_unknown";
 			colorName="ColorOrange";
 			angle=-0.60203898;
@@ -10091,7 +9968,7 @@ class Mission
 		{
 			position[]={5379.1855,77.380905,17922.482};
 			name="dimond_1_1";
-			text="Sand - Verarbeitung";
+			text="Sand Processing";
 			type="mil_triangle";
 			colorName="ColorBrown";
 			angle=-80.305901;
@@ -10100,7 +9977,7 @@ class Mission
 		{
 			position[]={18157.965,26.492321,12840.584};
 			name="civ_truck_shop1_1";
-			text="LKW Händler";
+			text="Truck Shop";
 			type="c_car";
 			colorName="ColorBlue";
 		};
@@ -10122,24 +9999,26 @@ class Mission
 		{
 			position[]={12290.406,123.8956,8899.7314};
 			name="Rebelop_1";
-			text="Rebellen Außenposten";
+			text="Rebel Outpost";
 			type="mil_triangle";
+			colorName="Color1_FD_F";
 		};
 		class Item137
 		{
 			position[]={20081.033,100.96766,6737.1904};
 			name="Rebelop_2";
-			text="Rebellen Außenposten";
+			text="Rebel Outpost";
 			type="mil_triangle";
+			colorName="Color1_FD_F";
 		};
 		class Item138
 		{
 			position[]={9326.4922,14.638341,11912.618};
 			name="gun_store_1";
-			text="Waffen Shop";
+			text="Gun Store";
 			type="loc_Bunker";
 			colorName="ColorRed";
-			angle=7.2259898;
+			angle=7.2259879;
 		};
 		class Item139
 		{
@@ -10154,11 +10033,9 @@ class Mission
 		{
 			position[]={19878.146,30.042439,17011.926};
 			name="heroin_1";
-			text="Heroin Feld";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			text="Heroin Field";
+			type="hd_dot";
+			colorName="ColorRed";
 		};
 		class Item141
 		{
@@ -10174,11 +10051,9 @@ class Mission
 		{
 			position[]={23644.953,51.044296,21802.297};
 			name="heroin_p";
-			text="Heroin Verarbeitung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
+			text="Heroin Processing";
+			type="mil_dot";
+			colorName="ColorRed";
 		};
 		class Item143
 		{
@@ -10243,7 +10118,7 @@ class Mission
 		{
 			position[]={12682.691,1.9715809,14214.604};
 			name="boat_2_1";
-			text="Boot Shop";
+			text="Boat Shop";
 			type="c_ship";
 			colorName="ColorWhite";
 		};
@@ -10251,7 +10126,7 @@ class Mission
 		{
 			position[]={12697.163,-0.013685904,14197.867};
 			name="civ_ship_2";
-			text="Boot Spawn";
+			text="Boat Spawn";
 			type="loc_Quay";
 			colorName="ColorOrange";
 		};
@@ -10275,16 +10150,16 @@ class Mission
 		{
 			position[]={17017.518,15.925221,12628.14};
 			name="Gen_3_1_1_3";
-			text="Markt";
+			text="Market";
 			type="c_unknown";
 			colorName="ColorGreen";
-			angle=127.89;
+			angle=127.88971;
 		};
 		class Item156
 		{
 			position[]={13946.49,22.888865,18664.123};
 			name="Gen_4";
-			text="Baumarkt";
+			text="General Store";
 			type="c_unknown";
 			colorName="ColorGreen";
 		};
@@ -10322,40 +10197,34 @@ class Mission
 		{
 			position[]={17073.295,24.327265,11361.496};
 			name="rock_1";
-			text="Steinbruch";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
+			text="Rock Quarry";
+			type="mil_box";
+			colorName="ColorBrown";
 		};
 		class Item162
 		{
 			position[]={19314.266,21.279949,16545.195};
 			name="rock_proc";
-			text="Stein Verarbeitung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
+			text="Rock Processing";
+			type="mil_dot";
+			colorName="ColorBrown";
 		};
 		class Item163
 		{
 			position[]={16578.012,14.273811,15989.947};
 			name="oil_trader_3_1";
-			text="Zement Händler";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
+			text="Cement Trader";
+			type="b_unknown";
+			colorName="ColorOrange";
 		};
 		class Item164
 		{
 			position[]={11849.67,4.2975636,13611.597};
 			name="dive_shop_1";
-			text="Tauchshop";
+			text="Diving Shop";
 			type="mil_box";
 			colorName="ColorOrange";
-			angle=-144.45599;
+			angle=-144.45552;
 		};
 		class Item165
 		{
@@ -10620,10 +10489,10 @@ class Mission
 		{
 			position[]={17495.891,12.760118,13290.289};
 			name="hospital_3";
-			text="Krankenhaus";
+			text="Hospital";
 			type="loc_Hospital";
 			colorName="ColorRed";
-			angle=-45.916599;
+			angle=-45.916607;
 		};
 		class Item199
 		{
@@ -10689,7 +10558,7 @@ class Mission
 		{
 			position[]={13795.459,60.220287,6396.0879};
 			name="gold_bar_dealer";
-			text="Goldhändler";
+			text="Gold Bars Buyer";
 			type="loc_ViewTower";
 			colorName="ColorYellow";
 		};
@@ -10713,7 +10582,7 @@ class Mission
 		{
 			position[]={11693.286,37.651257,15914.844};
 			name="gang_area_1";
-			text="Gang Versteck 1";
+			text="Gang Hideout 1";
 			type="hd_warning";
 			colorName="ColorRed";
 		};
@@ -10721,7 +10590,7 @@ class Mission
 		{
 			position[]={4885.7808,17.059162,14418.125};
 			name="gang_area_2";
-			text="Gang Versteck 2";
+			text="Gang Hideout 2";
 			type="hd_warning";
 			colorName="ColorRed";
 			angle=-358.09299;
@@ -10730,10 +10599,10 @@ class Mission
 		{
 			position[]={18383.779,27.092974,15248.242};
 			name="gang_area_3";
-			text="Gang Versteck 3";
+			text="Gang Hideout 3";
 			type="hd_warning";
 			colorName="ColorRed";
-			angle=2.8;
+			angle=2.7999959;
 		};
 		class Item213
 		{
@@ -10751,156 +10620,6 @@ class Mission
 			text="Turtle Dealer";
 			type="mil_dot";
 			colorName="ColorRed";
-		};
-		class Item215
-		{
-			position[]={17352.926,17.73341,12585.196};
-			name="Friedhof";
-			text="Friedhof";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
-		};
-		class Item216
-		{
-			position[]={14470.917,25.064558,6185.2207};
-			name="Relikte";
-			text="Relikte";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
-		};
-		class Item217
-		{
-			position[]={13691.15,-0.025671214,11911.294};
-			name="Reichsgold";
-			text="Reichsgold";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
-		};
-		class Item218
-		{
-			position[]={6545.894,179.88916,12374.083};
-			name="Höhle";
-			text="Höhle";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
-		};
-		class Item219
-		{
-			position[]={20071.393,17.949455,20074.637};
-			name="Relief";
-			text="Relief";
-			type="loc_Tree";
-			colorName="ColorBlack";
-			a=2;
-			b=2;
-		};
-		class Item220
-		{
-			position[]={4713.3774,294.80872,21364.463};
-			name="Devisenmarkt";
-			text="Devisenmarkt";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
-		};
-		class Item221
-		{
-			position[]={3582.092,20.620384,14482.666};
-			name="Devisenhändler";
-			text="Devisenhändler";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
-		};
-		class Item222
-		{
-			position[]={23991.389,8.8989849,15443.885};
-			name="Restaurator";
-			text="Restaurator";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
-		};
-		class Item223
-		{
-			position[]={18136.988,22.648989,15173.767};
-			name="Bestatter";
-			text="Bestatter";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
-		};
-		class Item224
-		{
-			position[]={21583.297,19.33,21279.359};
-			name="Reliefhändler";
-			text="Reliefhändler";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
-		};
-		class Item225
-		{
-			position[]={19381.352,38.726082,13245.436};
-			name="Reliefsäuberung";
-			text="Reliefsäuberung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
-		};
-		class Item226
-		{
-			position[]={16533.863,19.870001,17182.398};
-			name="Reliktwertschätzung";
-			text="Reliktwertschätzung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
-		};
-		class Item227
-		{
-			position[]={9494.8018,118.6535,15912.669};
-			name="Relikthändler";
-			text="Relikthändler";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
-		};
-		class Item228
-		{
-			position[]={7892.0337,114.6602,16156.802};
-			name="Knochenreinigung";
-			text="Knochenreinigung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
-		};
-		class Item229
-		{
-			position[]={5380.0405,21.951279,14508.034};
-			name="Medizinisches Institut";
-			text="Medizinisches Institut";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
 		};
 	};
 };
