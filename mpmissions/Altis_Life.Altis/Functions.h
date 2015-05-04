@@ -281,9 +281,6 @@ class Life_Client_Core
 		class doorAnimate {};
 		class fedCamDisplay {};
 		class ticketPaid {};
-		class seizeObjects {};
-        class seizePlayerWeapon {};
-        class seizePlayerWeaponAction {};
 	};
 	
 	class Gangs
