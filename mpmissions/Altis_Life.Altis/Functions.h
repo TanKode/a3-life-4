@@ -380,7 +380,4 @@ class Life_Client_Core
 		class marketGetPriceRow {};
 		class marketSetPriceRow {};
 	};
-	class seizeObjects {};
-        class seizePlayerWeapon {};
-        class seizePlayerWeaponAction {};
 };
