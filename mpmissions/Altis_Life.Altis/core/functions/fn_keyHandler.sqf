@@ -261,12 +261,6 @@ switch (_code) do
 			};
 		};
 	};
-	// O, Polizei und Rettungs dienst Schranken öffner
-    case 24:
-	{
-		if (!_shift && !_alt && !_ctrlKey && (playerSide == west || playerSide == independent) && (vehicle player != player)) then {
-			[] call life_fnc_copOpener;
-		};
 };
 
 _handled;

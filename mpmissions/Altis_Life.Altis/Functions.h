@@ -16,7 +16,7 @@ class Socket_Reciever
 class Life_Client_Core
 {
 	tag = "life";
-	
+
 	class Master_Directory
 	{
 		file = "core";
@@ -27,7 +27,7 @@ class Life_Client_Core
 		class initMedic {};
 		class welcomeNotification {};
 	};
-	
+
 	class Admin
 	{
 		file = "core\admin";
@@ -37,7 +37,7 @@ class Life_Client_Core
 		class adminMenu {};
 		class adminQuery {};
 	};
-	
+
 	class Medical_System
 	{
 		file = "core\medical";
@@ -55,7 +55,7 @@ class Life_Client_Core
 		class medicLights {};
 		class medicSiren {};
 	};
-	
+
 	class Actions
 	{
 		file = "core\actions";
@@ -90,7 +90,7 @@ class Life_Client_Core
 		class captureHideout {};
 		class gather {};
 	};
-	
+
 	class Housing
 	{
 		file = "core\housing";
@@ -107,7 +107,7 @@ class Life_Client_Core
 		class copHouseOwner {};
 		class lockHouse {};
 	};
-	
+
 	class Config
 	{
 		file = "core\config";
@@ -128,7 +128,7 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
-		
+
 		//Clothing Store Configs
 		class clothing_cop {};
 		class clothing_bruce {};
@@ -159,7 +159,7 @@ class Life_Client_Core
 		class settingsMenu {};
 		class settingsInit {};
 	};
-	
+
 	class Functions
 	{
 		file = "core\functions";
@@ -205,7 +205,7 @@ class Life_Client_Core
 		class fadeSound {};
 		class randomRound {};
 	};
-	
+
 	class Network
 	{
 		file = "core\functions\network";
@@ -220,7 +220,7 @@ class Life_Client_Core
 		class setTexture {};
 		class say3D {};
 	};
-	
+
 	class Civilian
 	{
 		file = "core\civilian";
@@ -235,7 +235,7 @@ class Life_Client_Core
 		class demoChargeTimer {};
 		class civLoadout {};
 	};
-	
+
 	class Vehicle
 	{
 		file = "core\vehicle";
@@ -251,38 +251,37 @@ class Life_Client_Core
 		class deviceMine {};
 		class addVehicle2Chain {};
 	};
-	
+
 	class Cop
 	{
 		file = "core\cop";
 		class copMarkers {};
 		class copLights {};
-		class copSiren {};
-		class copShowLicense {};
-		class copLicenseShown {};
-		class copLoadout {};
-		class copInteractionMenu {};
-		class copSearch {};
-		class copOpener {};
 		class vehInvSearch {};
+		class copSearch {};
 		class bountyReceive {};
 		class searchClient {};
 		class restrain {};
 		class ticketGive {};
 		class ticketPay {};
 		class ticketPrompt {};
+		class copSiren {};
 		class spikeStripEffect {};
 		class radar {};
 		class questionDealer {};
+		class copInteractionMenu {};
 		class sirenLights {};
 		class licenseCheck {};
 		class licensesRead {};
 		class repairDoor {};
 		class doorAnimate {};
 		class fedCamDisplay {};
+		class copLoadout {};
 		class ticketPaid {};
+		class copShowLicense {};
+        class copLicenseShown {};
 	};
-	
+
 	class Gangs
 	{
 		file = "core\gangs";
@@ -299,7 +298,7 @@ class Life_Client_Core
 		class gangDisband {};
 		class gangDisbanded {};
 	};
-	
+
 	class Shops
 	{
 		file = "core\shops";
@@ -323,7 +322,7 @@ class Life_Client_Core
 		class chopShopSelection {};
 		class chopShopSell {};
 	};
-	
+
 	class Items
 	{
 		file = "core\items";
@@ -337,7 +336,7 @@ class Life_Client_Core
 		class defuseKit {};
 		class storageBox {};
 	};
-	
+
 	class Dialog_Controls
 	{
 		file = "dialog\function";
