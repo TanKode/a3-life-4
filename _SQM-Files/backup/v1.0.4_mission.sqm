@@ -8525,7 +8525,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=241;
+		items=236;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -10515,9 +10515,9 @@ class Mission
 		};
 		class Item234
 		{
-			position[]={16106.107,21.942823,16436.713};
-			name="schwarzschmuckverarbeitung";
-			text="Schwarzschmuckverarbeitung";
+			position[]={16650.119,17.296173,16122.787};
+			name="schmuckverarbeitung";
+			text="Schmuckverarbeitung";
 			type="loc_Tree";
 			colorName="ColorBlue";
 			a=2;
@@ -10525,61 +10525,11 @@ class Mission
 		};
 		class Item235
 		{
-			position[]={9232.1982,271.40182,19272.984};
-			name="schwarzschmuckhaendler";
-			text="Schwarzschmuckhändler";
+			position[]={9236.0049,271.17908,19269.527};
+			name="Juwelier";
+			text="Juwelier";
 			type="loc_Tree";
 			colorName="ColorGreen";
-			a=2;
-			b=2;
-		};
-		class Item236
-		{
-			position[]={15401.329,4.33604,15883.03};
-			name="schmuckverarbeitung_1";
-			text="Schmuckverarbeitung";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
-		};
-		class Item237
-		{
-			position[]={28062.719,6.0341601,23765.17};
-			name="kontaktmann";
-			text="Kontaktmann";
-			type="loc_Tree";
-			colorName="ColorBlue";
-			a=2;
-			b=2;
-		};
-		class Item238
-		{
-			position[]={6282.1841,0.041572165,22653.42};
-			name="datenhaendler";
-			text="Datenhändler";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
-		};
-		class Item239
-		{
-			position[]={7868.1621,274.13202,14620.796};
-			name="schmuckhaendler";
-			text="Schmuckhändler";
-			type="loc_Tree";
-			colorName="ColorGreen";
-			a=2;
-			b=2;
-		};
-		class Item240
-		{
-			position[]={14214.251,3.3270087,6298.625};
-			name="daten";
-			text="Daten";
-			type="loc_Tree";
-			colorName="ColorBlack";
 			a=2;
 			b=2;
 		};
