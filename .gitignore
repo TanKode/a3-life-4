@@ -13,6 +13,10 @@
 /TADST/
 /addons/
 /config/Users/
+/_CommonRedist/
+/Launcher/
+/Missions/
+/@Sweet markers system/
 
 # Types
 *.dll
@@ -23,16 +27,24 @@
 *.iml
 *.bidmp
 *.mdmp
+*.pdf
+*.tmp
 
 # Files
+desktop.ini
+ACCOUNTS.md
+installscript.vdf
+arma3launcher.exe.config
+
+# TXT
 steam_appid.txt
 arma3server_readme.txt
 AltisLife-3.1.4.8-extDB-0.txt
-desktop.ini
-ACCOUNTS.md
+readme_smaa.txt
+readme_fxaa.txt
+arma3_readme.txt
 
 # Temp
-*.tmp
 __cur_mp.pbo
 
 # Logs
