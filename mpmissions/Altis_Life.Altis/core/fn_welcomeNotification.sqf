@@ -12,7 +12,6 @@ format["Welcome %1, Please read the following as it is important!",profileName] 
 	"Zum Farmen nutzt du die linke Windows-Taste und falls du dinge auf sammeln moechtest nutze die Linke Windows-Taste + T.",
 	"Wir spielen mit MODS! Diesen kannst du dir auf unserer Homepage Herunterladen(www.altis.rlp-clan.de)",
 	"Troller werden bei uns nicht Geduldet und denk bitte daran ,dass das hier ein RP Server ist!",
-	"",
 	"Falls du noch irgendwelche fragen hast melde dich doch bei uns auf dem Teamspeak wir helfen dir gerne."
 ];
 
