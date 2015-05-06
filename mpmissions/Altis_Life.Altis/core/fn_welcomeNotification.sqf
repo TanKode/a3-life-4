@@ -6,7 +6,7 @@
 */
 format["Welcome %1, Please read the following as it is important!",profileName] hintC
 [
-	"Willkommen auf unserem Server! Wir wuenschen dir viel Spaß beim spielen auf unserem Server",
+	"Willkommen auf unserem Server! Wir wuenschen dir viel Spaß beim spielen",
 	"Doch bitte beachte die Regel die du in unserem Forum nachschlagen kannst!",
 	"Jetzt noch ein paar dinge die dir helfen könnten.",
 	"Zum Farmen nutzt du die linke Windows-Taste und falls du dinge auf sammeln moechtest nutze die Linke Windows-Taste + T.",
