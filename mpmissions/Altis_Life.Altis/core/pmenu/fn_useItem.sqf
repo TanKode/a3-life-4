@@ -89,7 +89,7 @@ switch (true) do
 		case (_item == "tracker"):
     	{
     		[] spawn life_fnc_tracker;
-    	};
+    };
 	
 	default
 	{
