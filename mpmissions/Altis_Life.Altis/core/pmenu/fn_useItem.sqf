@@ -86,10 +86,6 @@ switch (true) do
 	{
 		[] spawn life_fnc_pickAxeUse;
 	};
-		case (_item == "tracker"):
-    	{
-    		[] spawn life_fnc_tracker;
-    };
 	
 	default
 	{
