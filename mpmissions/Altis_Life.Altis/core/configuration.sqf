@@ -269,7 +269,7 @@ buy_array =
 	["defusekit",2500],
 	["storagesmall",75000],
 	["storagebig",150000],
-	​["gpstracker",2000]
+	​["gpstracker",2000],
 ];
 __CONST__(buy_array,buy_array);
 
