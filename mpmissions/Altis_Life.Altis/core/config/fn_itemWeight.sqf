@@ -56,5 +56,6 @@ switch (_item) do
 	case "defusekit": {2};
 	case "storagesmall": {1};
 	case "storagebig": {2};
+	case "tracker": {2};
 	default {1};
 };
