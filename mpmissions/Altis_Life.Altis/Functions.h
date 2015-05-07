@@ -89,6 +89,7 @@ class Life_Client_Core
 		class robAction {};
 		class captureHideout {};
 		class gather {};
+		class schranke {};
 	};
 
 	class Housing
@@ -335,6 +336,7 @@ class Life_Client_Core
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};
+		class schranke {};
 	};
 
 	class Dialog_Controls

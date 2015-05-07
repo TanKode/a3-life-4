@@ -24,6 +24,7 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
+life_schranke = ObjNull;
 life_respawn_timer = 2; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
@@ -157,7 +158,8 @@ life_inv_items =
 	"life_inv_boltcutter",
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
-	"life_inv_storagebig"
+	"life_inv_storagebig",
+	"life_inv_schranke"
 ];
 
 //Setup variable inv vars.
@@ -236,7 +238,8 @@ sell_array =
 	["fuelF",500],
 	["spikeStrip",1200],
 	["cement",1950],
-	["goldbar",95000]
+	["goldbar",95000],
+	["schranke",5000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -266,7 +269,8 @@ buy_array =
 	["boltcutter",7500],
 	["defusekit",2500],
 	["storagesmall",75000],
-	["storagebig",150000]
+	["storagebig",150000],
+	["schranke",10000]
 ];
 __CONST__(buy_array,buy_array);
 

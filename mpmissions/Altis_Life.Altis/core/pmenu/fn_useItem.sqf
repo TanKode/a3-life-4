@@ -65,7 +65,16 @@ switch (true) do
 			[] spawn life_fnc_spikeStrip;
 		};
 	};
-	
+
+	case (_item == "schranke"):
+	{
+		if(!isNull life_schranke) exitWith {hint localize "STR_ISTR_SpikesDeployment"};
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			[] spawn life_fnc_schranke;
+		};
+	};
+
 	case (_item == "fuelF"):
 	{
 		if(vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
