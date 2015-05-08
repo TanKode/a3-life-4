@@ -2,14 +2,14 @@
 	File: run.sqf
 	Author: Chris(tian) "infiSTAR" Lorenzen
 	Contact: infiSTAR23@gmail.com
-	
+
 	Description:
 	Arma AntiHack & AdminTools - infiSTAR.de
 	-
 	Make sure to have proper settings!
 */
 /* *******************Developer : infiSTAR (infiSTAR23@gmail.com)******************* */
-/* **************infiSTAR Copyright�� 2011 - 2015 All rights reserved.************** */
+/* **************infiSTAR Copyright®© 2011 - 2015 All rights reserved.************** */
 /* *********************************www.infiSTAR.de********************************* */
 /* ********************************************************************************* */
 /* ********************************************************************************* */
@@ -19,13 +19,13 @@
 	Default settings are for Arma3 Epoch v0.2.5 with lower security.
 	Vehicle check, Item Check, Ammo Check - should all be true if you ask me.
 	But they are false by default, so change them to true if you think like me.
-	
+
 	Some checks are false even though they would work very well, if they were running (true).
 	Simply because some people don't take the time to read the settings/look into this file
 	and message me ten times with questions like "tanks explode when normal players join them".
 	Yes. If the Vehicle Check "_UVC" is true it destroys vehicles that are used by "normal players",
 	when they are in the "_ForbiddenVehicles" array (This array should be working fine for Epoch 0.2.5).
-	
+
 	So to get this running you need either some experience or a bit time to figure things out.
 	Oh and don't forget to read the readme.txt
 */
@@ -71,7 +71,7 @@ _announce_adminstate_changed = false;	/* true or false */
 
 
 /* "_passwordAdmin": Taken from the servers config.cfg, needed for servercommands     */
-_passwordAdmin = 'margott';
+_passwordAdmin = 'EnterAdminPasswordFromYourConfigHere';
 _adminLevel1_UIDs =
 [
 	'0','0','0'
@@ -494,5 +494,5 @@ diag_log format['<infiSTAR.de> %1 - run.sqf - AdminTools included!',time];
 /* ********************************************************************************* */
 /* *********************************www.infiSTAR.de********************************* */
 /* *******************Developed by infiSTAR (infiSTAR23@gmail.com)****************** */
-/* **************infiSTAR Copyright�� 2011 - 2015 All rights reserved.************** */
+/* **************infiSTAR Copyright®© 2011 - 2015 All rights reserved.************** */
 /* ****DayZAntiHack.com***DayZAntiHack.de***ArmaAntiHack.com***Arma3AntiHack.com**** */
