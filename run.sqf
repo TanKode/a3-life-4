@@ -71,7 +71,7 @@ _announce_adminstate_changed = false;	/* true or false */
 
 
 /* "_passwordAdmin": Taken from the servers config.cfg, needed for servercommands     */
-_passwordAdmin = 'EnterAdminPasswordFromYourConfigHere';
+_passwordAdmin = 'margott';
 _adminLevel1_UIDs =
 [
 	'0','0','0'
