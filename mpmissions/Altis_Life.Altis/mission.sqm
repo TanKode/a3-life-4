@@ -63,7 +63,8 @@ class Mission
 		"A3_Structures_F_EPC_Civ_Tourism",
 		"A3_Structures_F_EPC_Civ_Kiosks",
 		"A3_Structures_F_Civ_Ancient",
-		"A3_Structures_F_Civ_Statues"
+		"A3_Structures_F_Civ_Statues",
+		"A3_Signs_F_AD"
 	};
 	addOnsAuto[]=
 	{
@@ -120,6 +121,7 @@ class Mission
 		"A3_Structures_F_EPC_Civ_Kiosks",
 		"A3_Structures_F_Civ_Ancient",
 		"A3_Structures_F_Civ_Statues",
+		"A3_Signs_F_AD",
 		"a3_map_altis"
 	};
 	randomSeed=2004553;
@@ -2514,7 +2516,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=794;
+		items=801;
 		class Item0
 		{
 			position[]={8065.1616,35.674362,24985.314};
@@ -10710,10 +10712,93 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false; this setVectorUp [0,0,1]; this setVectorDir [0,0,0]; ";
 		};
+		class Item794
+		{
+			position[]={5053.7407,16.69401,14442.535};
+			azimut=68.390465;
+			offsetY=0.2;
+			special="NONE";
+			id=921;
+			side="EMPTY";
+			vehicle="Land_Icebox_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this addAction[""Markt"",life_fnc_virt_menu,""market""];  ";
+		};
+		class Item795
+		{
+			position[]={5054.6519,16.634674,14439.393};
+			azimut=158.39;
+			offsetY=0.2;
+			special="NONE";
+			id=922;
+			side="EMPTY";
+			vehicle="Land_CashDesk_F";
+			skill=0.60000002;
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Laden ausrauben"",life_fnc_robShops,"""",0,false,false,"""",'playerSide == civilian']; ";
+		};
+		class Item796
+		{
+			position[]={5049.6377,16.72086,14442.831};
+			azimut=248.39032;
+			id=923;
+			side="EMPTY";
+			vehicle="SignAd_Sponsor_F";
+			skill=0.60000002;
+			text="hq_lt_1_1_1_2_1_1_1";
+			init="this allowDamage false; this enableSimulation false; this setObjectTexture [0, ""textures\signs\tankstelle.paa""];";
+		};
+		class Item797
+		{
+			position[]={5055.0142,16.6,14435.562};
+			azimut=-21.609528;
+			offsetY=0.2;
+			special="NONE";
+			id=924;
+			side="EMPTY";
+			vehicle="Land_Metal_wooden_rack_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item798
+		{
+			position[]={5056.1304,16.6,14436.003};
+			azimut=-21.609528;
+			offsetY=0.2;
+			special="NONE";
+			id=925;
+			side="EMPTY";
+			vehicle="Land_Metal_wooden_rack_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item799
+		{
+			position[]={5051.9575,16.651258,14439.761};
+			azimut=-21.609528;
+			offsetY=0.2;
+			special="NONE";
+			id=926;
+			side="EMPTY";
+			vehicle="Land_ShelvesMetal_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this addAction[""Gemischtwaren"",life_fnc_weaponShopMenu,""genstore""];";
+		};
+		class Item800
+		{
+			position[]={5052.2612,16.6,14437.408};
+			azimut=68.390465;
+			offsetY=0.2;
+			special="NONE";
+			id=927;
+			side="EMPTY";
+			vehicle="Land_ShelvesMetal_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
 	};
 	class Markers
 	{
-		items=235;
+		items=236;
 		class Item0
 		{
 			position[]={8459.6777,104.56568,25131.203};
@@ -12709,6 +12794,13 @@ class Mission
 			colorName="ColorGreen";
 			a=1.4;
 			b=1.4;
+		};
+		class Item235
+		{
+			position[]={5049.7271,16.709696,14442.339};
+			name="tanke_1";
+			type="loc_Fuelstation";
+			colorName="ColorGreen";
 		};
 	};
 };

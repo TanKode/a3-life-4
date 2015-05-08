@@ -382,3 +382,19 @@ class Life_Client_Core
 		class marketSetPriceRow {};
 	};
 };
+class lhm_fuelstations
+{
+	tag = "lhm";
+
+	class fuelstations
+	{
+		file = "core\RLP\fuelstations\script";
+		class fuelStationAddAction {};
+		class fuelStationFill {};
+		class fuelStationMenu {};
+		class fuelStationSelect {};
+		class fuelStationSliderChange {};
+		class initFuelstations {};
+		class vehFuelCap {};
+	};
+};
