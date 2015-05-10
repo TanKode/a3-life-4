@@ -27,12 +27,12 @@ switch (_type) do
 	case "rebel": {75000}; //Rebel license cost
 	case "truck": {20000}; //Truck license cost
 	case "diamond": {35000}; //Diamanten
-	case "salt": {12000}; // Salz
+	case "salt": {12000}; //Salz
 	case "cocaine": {30000}; //Koks
-	case "sand": {14500}; // Sand
-	case "iron": {9500}; // Eisen
-	case "copper": {8000}; // Kupfer
-	case "cement": {6500};  // Zement
-	case "mair": {15000}; // EINTRAGEN !!!!!!!
-	case "home": {75000}; // EINTRAGEN !!!!!!!
+	case "sand": {14500}; //Sand
+	case "iron": {9500}; //Eisen
+	case "copper": {8000}; //Kupfer
+	case "cement": {6500};  //Zement
+	case "mair": {15000}; //EINTRAGEN
+	case "home": {75000}; //EINTRAGEN
 };
